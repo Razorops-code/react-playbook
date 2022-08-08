@@ -1,0 +1,9 @@
+tasks:
+  build-deps:
+     runner: node:10
+     steps:
+       - checkout
+       - commands:
+           - cd packages/jest-enzyme
+           - npm install
+           - npm test
